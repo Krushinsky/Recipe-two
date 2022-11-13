@@ -1,11 +1,15 @@
 function About(){
+  const ShowPage =(e) =>{
+    const conatiner = document.querySelector('.container')
+    conatiner.classList.remove('active');
+  }
     return(
-        <div className='screen' id="About">
+        <div className='screen' id="About" onClick={ShowPage}>
         <div className='main'>
           <header className='header_five'>
             <div className='header'>
               <div className='header_item'>
-                <h2 className='title'>Home page</h2>
+                <h2 className='title'>About page</h2>
                 <p> New text from this page</p>
                 <button className='btn'>Read more</button>
               </div>

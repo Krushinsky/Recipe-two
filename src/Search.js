@@ -15,6 +15,7 @@ function Search(){
     useEffect (() => {
         const getAdvace = async() => {
         const response = await fetch (`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`)
+
         const data = await response.json();
         console.log(data.hits)
         setMyRecipes(data.hits)
@@ -28,23 +29,27 @@ const myRecipeSearch = (e) => {
 }
 
 const finalSearch = (e) =>{
-e.preventDefult()
+e.preventDefault()
 console.log(mySearch)
 setWordSubmitted(mySearch);
 }
+const ShowPage =(e) =>{
+  const conatiner = document.querySelector('.container')
+  conatiner.classList.remove('active');
+}
     return(
-        <div className='screen' id="Services">
+        <div className='screen' id="Services" onClick={ShowPage}>
         <div className='main'>
           <header className='header_two'>
             <div className='header'>
-              <div className='header_item'>
+              <div className='header_item' >
                 <h2 className='title'>Search page</h2>
                 <form onSubmit={finalSearch}>
                     <input className='Search' placeholder='Search...' onChange={myRecipeSearch} value = {mySearch}>
                     </input>
                 </form>
-                <button className='btn' onClick={myRecipeSearch}>Search</button>
-                <div>
+                <button className='btn' onClick={finalSearch}>Search</button>
+                <div className='showRecipes'>
                     {myRecipes.map(element =>(
                         <MyRecipesComponent 
                         label={element.recipe.label} 

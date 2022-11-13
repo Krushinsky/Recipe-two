@@ -91,20 +91,21 @@
             background: url('../img/two.jpg') no-repeat top center/cover;
           }
           &.header_three{
-            background: url('../img/two.jpg') no-repeat top center/cover;
+            background: url('../img/four.jpg') no-repeat top center/cover;
           }
           &.header_four{
             background: url('../img/three.jpg') no-repeat top center/cover;
           }
           &.header_five{
-            background: url('../img/two.jpg') no-repeat top center/cover;
+            background: url('../img/six.jpg') no-repeat top center/cover;
           }
           &.header_six{
-            background: url('../img/two.jpg') no-repeat top center/cover;
+            background: url('../img/five.jpg') no-repeat top center/cover;
           }
 
           .header{
-              position: relative;
+              overflow:scroll;
+              position: absolute;
               width: 100%;
               height: 100%;
               top: 0;
@@ -133,9 +134,19 @@
                     cursor: pointer;
                     text-decoration: none;
                   }
+                  .showRecipes{
+                    
+                    height: 0;
+                  }
               }    
           }
       }
+  }
+  .myRecipesComponent{
+    background-color: #1178e756;
+  }
+  ul{
+    list-style-type: none
   }
   //Shadows
   .shadow{

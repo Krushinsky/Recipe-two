@@ -1,6 +1,10 @@
 function Testimonials(){
+  const ShowPage =(e) =>{
+    const conatiner = document.querySelector('.container')
+    conatiner.classList.remove('active');
+  }
     return(
-        <div className='screen' id="Testimonials">
+        <div className='screen' id="Testimonials" onClick={ShowPage}>
         <div className='main'>
           <header className='header_four'>
             <div className='header'>

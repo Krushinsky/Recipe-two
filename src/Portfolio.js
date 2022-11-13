@@ -1,13 +1,22 @@
 function Portfolio(){
+  const ShowPage =(e) =>{
+    const conatiner = document.querySelector('.container')
+    conatiner.classList.remove('active');
+  }
     return(
-        <div className='screen' id="Portfolio">
+        <div className='screen' id="Portfolio" onClick={ShowPage}>
         <div className='main'>
           <header className='header_three'>
             <div className='header'>
               <div className='header_item'>
                 <h2 className='title'>Portfolio page</h2>
-                <p> New text from this page</p>
-                <button className='btn'>Read more</button>
+                <ul>
+                  <li>  <a href=" https://krushinsky.github.io/New-Portfolio/" className="linkPortfolio" target="_blank" rel="noreferrer"> Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Krushinsky" className="linkPortfolio" target="_blank" rel="noreferrer">GitHub</a> 
+                  </li>
+                </ul>
               </div>
             </div>
           </header>

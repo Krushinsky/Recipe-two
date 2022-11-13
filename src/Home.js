@@ -1,8 +1,12 @@
 import './App.scss'
 
 function Home(){
+  const ShowPage =(e) =>{
+    const conatiner = document.querySelector('.container')
+    conatiner.classList.remove('active');
+  }
     return(
-        <div className='screen' id="Home">
+        <div className='screen' id="Home" onClick={ShowPage}>
         <div className='main'>
           <header className='header_one'>
             <div className='header'>

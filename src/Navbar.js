@@ -26,10 +26,7 @@ function Navbar(){
     const conatiner = document.querySelector('.container')
     conatiner.classList.toggle('active');
     }
-    const ShowPage =(e) =>{
       
-    }
-    // 
     return <Router>
 
       <div>
@@ -47,7 +44,7 @@ function Navbar(){
       <div className="links">
       <ul>
         <li>
-          <Link to ='/Home' onMouseEnter={ShowPage} className="link __Home" > Home</Link>
+          <Link to ='/Home' className="link __Home" > Home</Link>
         </li>
         <li>
           <Link to ='/Search' className="link __Services"> Search</Link>

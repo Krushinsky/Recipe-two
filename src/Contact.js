@@ -1,6 +1,10 @@
 function Contact(){
+  const ShowPage =(e) =>{
+    const conatiner = document.querySelector('.container')
+    conatiner.classList.remove('active');
+  }
     return(
-        <div className='screen' id="Contact">
+        <div className='screen' id="Contact" onClick={ShowPage}>
         <div className='main'>
           <header className='header_six'>
             <div className='header'>
