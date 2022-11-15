@@ -1,7 +1,7 @@
 function MyRecipesComponent({label, image, calories, ingredientLines}){
 
     return(
-        <div className="myRecipesComponent" >
+        <div className="myRecipesComponent" key={ingredientLines}>
             <h2>{label}</h2>
             <img src={image} alt='food' />
             <h2>{calories.toFixed()} calories</h2>

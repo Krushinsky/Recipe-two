@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+  font-family: 'Montserrat', sans-serif;
 }
 //Navbar
 .navbar{
@@ -138,12 +138,23 @@
                     
                     height: 0;
                   }
+                  .linkPortfolio{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    font-size: 20px;
+                    background-color: rgba(0, 0, 0, 0.589);
+                    line-height: 1.5;
+                    border-radius: 3px;
+                  }
+                  
               }    
           }
       }
   }
   .myRecipesComponent{
-    background-color: #1178e756;
+    background-color: #0000008f;
+    line-height: 1.5;
+    padding: 10%;
   }
   ul{
     list-style-type: none
