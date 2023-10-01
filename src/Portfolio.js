@@ -11,7 +11,7 @@ function Portfolio(){
               <div className='header_item'>
                 <h2 className='title'>Portfolio page</h2>
                 <ul>
-                  <li>  <a href=" https://krushinsky.github.io/New-Portfolio/" className="linkPortfolio" target="_blank" rel="noreferrer"> Portfolio</a>
+                  <li>  <a href=" https://krushinsky.github.io/Portfolio/" className="linkPortfolio" target="_blank" rel="noreferrer"> Portfolio</a>
                   </li>
                   <li>
                     <a href="https://github.com/Krushinsky" className="linkPortfolio" target="_blank" rel="noreferrer">GitHub</a> 
